@@ -1,0 +1,18 @@
+import random
+# (comments)n is the generated number- 
+n=random.randint(1,99)
+# (comments) here we will start guessing
+guess=int(input("enter a integer from one to ninenty-nine-:"))
+while(n!="guess"):
+    if(guess<n):
+        print("Guess is low")
+        guess=int(input("enter a integer from one to ninenty-nine-:"))
+    elif(guess>n):
+        print("Guess is high")
+        guess=int(input("enter a integer from one to ninenty-nine-:"))
+    else:
+        print("You Guessed it Right")
+        break
+        #  (comments)break will be used because the program will lead to a infinite loop
+            
+        
